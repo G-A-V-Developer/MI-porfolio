@@ -1,0 +1,87 @@
+
+/* Estilo para el fondo */
+body {
+  margin: 0;
+  overflow: hidden; /* Evita el scroll */
+  background: black; /* Fondo negro */
+  position: relative;
+  color: white;
+}
+
+canvas {
+  position: fixed; /* Asegura que esté fijo en el fondo */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Envía el canvas detrás del resto de los elementos */
+}
+
+/* estilo de la pagina de inicio */
+.navegadorInicio{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(22, 55, 26, 0.503); /* Fondo negro translúcido */ 
+  padding: 5px;
+  margin: 0px;
+}
+
+.nav-link button {
+  background-color: black;
+  color: white;
+  size: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 30px;
+  width: 100px;
+  height: 50px;
+  border: solid white 1px;
+
+}
+.marca{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+  margin: 100px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.redes a {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  margin: 10px;
+}
+
+/* Estilo para la barra de navegacion de las otras paginas */
+.navegacion{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(22, 55, 26, 0.503); /* Fondo negro translúcido */ 
+  padding: 5px;
+  margin: 0px;
+}
+.navegacion a button{
+  background-color: black;
+  color: white;
+  size: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 30px;
+  width: 100px;
+  height: 50px;
+  border: solid white 1px;
+}
