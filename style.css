@@ -61,7 +61,7 @@ footer {
 @media (max-width: 480px) {
   .bodyInicio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -80,11 +80,10 @@ footer {
     margin: 0px;
     padding: 40px;
   }
-
-  .abajo {
+  footer {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
