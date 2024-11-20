@@ -1,18 +1,25 @@
 /* Estilo para el fondo */
 body {
-  /* overflow: hidden; */
-  background: black;
-  position: relative;
+  margin: 0; /* Eliminar márgenes */
+  padding: 0; /* Eliminar rellenos */
+  overflow: hidden; /* Evitar scroll */
+  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
+  position: relative;
 }
 
 canvas {
   position: fixed;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ocupa el 100% del ancho */
+  height: 100vh; /* Ocupa el 100% del alto */
+  z-index: -1; /* Asegura que el canvas esté detrás de los elementos */
 }
-
 .navegadorInicio {
   list-style: none;
   padding: 5px;
@@ -55,7 +62,7 @@ footer {
 /* Media Queries */
 
 /* Moviles */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .bodyInicio {
     display: flex;
     flex-direction: column;
