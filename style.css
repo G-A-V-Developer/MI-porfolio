@@ -64,7 +64,6 @@ footer {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
   }
   .navegadorInicio {
     display: flex;
@@ -76,7 +75,7 @@ footer {
     height: 40px;
   }
   .marca {
-    font-size: 60px;
+    font-size: 50px;
     margin: 0px;
     padding: 40px;
   }
