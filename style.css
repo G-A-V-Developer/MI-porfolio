@@ -1,29 +1,23 @@
-
 /* Estilo para el fondo */
 body {
   margin: 0;
-  overflow: hidden; /* Evita el scroll */
-  background: black; /* Fondo negro */
+  overflow: hidden;
+  background: black;
   position: relative;
   color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 canvas {
-  position: fixed; /* Asegura que esté fijo en el fondo */
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; /* Envía el canvas detrás del resto de los elementos */
+  position: fixed;
+  z-index: -1;
 }
 
-/* estilo de la pagina de inicio */
-.navegadorInicio{
+.navegadorInicio {
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: rgba(22, 55, 26, 0.503); /* Fondo negro translúcido */ 
   padding: 5px;
   margin: 0px;
 }
@@ -31,18 +25,9 @@ canvas {
 .nav-link button {
   background-color: black;
   color: white;
-  size: 10px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin: 30px;
-  width: 100px;
-  height: 50px;
   border: solid white 1px;
-
 }
-.marca{
+.marca {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -50,7 +35,7 @@ canvas {
   margin: 100px;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   color: white;
@@ -63,25 +48,43 @@ footer{
 }
 
 /* Estilo para la barra de navegacion de las otras paginas */
-.navegacion{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: rgba(22, 55, 26, 0.503); /* Fondo negro translúcido */ 
-  padding: 5px;
-  margin: 0px;
-}
-.navegacion a button{
+
+.navegacion a button {
   background-color: black;
   color: white;
-  size: 10px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin: 30px;
-  width: 100px;
-  height: 50px;
   border: solid white 1px;
+}
+
+/* Media Queries */
+
+/* Moviles */
+@media (max-width: 480px) {
+  .bodyInicio {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .navegadorInicio {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link button {
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+  }
+  .marca {
+    font-size: 60px;
+    margin: 0px;
+    padding: 40px;
+  }
+
+  .abajo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
 }
