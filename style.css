@@ -56,10 +56,6 @@ footer {
 
 /* Moviles */
 @media (max-width: 480px) {
-  canvas {
-    position: fixed;
-    z-index: -1;
-  }
   .bodyInicio {
     display: flex;
     flex-direction: column;
