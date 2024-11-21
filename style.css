@@ -6,8 +6,6 @@ body {
   background-color: black;
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
   position: relative;
 }
@@ -20,17 +18,17 @@ canvas {
   height: 100vh; /* Ocupa el 100% del alto */
   z-index: -1; /* Asegura que el canvas esté detrás de los elementos */
 }
+
+/* Estilo para el inicio */
 .navegadorInicio {
   list-style: none;
   padding: 5px;
   margin: 0px;
 }
-
-.nav-link button {
-  background-color: black;
-  color: white;
-  border: solid white 1px;
+.nav-item {
+  list-style: none;
 }
+
 .marca {
   display: flex;
   text-align: center;
@@ -38,6 +36,17 @@ canvas {
   font-size: 100px;
   margin: 100px;
 }
+/* Estilo para los botones */
+button {
+  background-color: black;
+  color: white;
+  border: solid white 1px;
+}
+ul {
+  list-style: none;
+}
+
+/* Estilo del footer */
 
 footer {
   display: flex;
@@ -47,7 +56,7 @@ footer {
 .redes a {
   color: white;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 40px;
   margin: 10px;
 }
 
@@ -63,6 +72,7 @@ footer {
 
 /* Moviles */
 @media (max-width: 768px) {
+  /* Ajuste para el inicio */
   .bodyInicio {
     display: flex;
     flex-direction: column;
@@ -89,4 +99,23 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .bodyPaginas {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Ajuste de la navegacion para todas las paginas menos inicio */
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .navegacionPaginas {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  .navegacionPaginas li a button {
+    margin: 5px;
+    padding: 5px;
+  }
+  /* Ajuste para sobre mi */
 }
