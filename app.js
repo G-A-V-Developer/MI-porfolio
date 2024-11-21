@@ -43,7 +43,7 @@ function draw() {
 }
 
 // Ejecutar la función de dibujo en un bucle
-setInterval(draw, 50);
+setInterval(draw, 100);
 
 // Ajustar el canvas al cambiar el tamaño de la ventana
 window.addEventListener("resize", () => {
