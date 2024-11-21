@@ -8,6 +8,7 @@ body {
   display: flex;
   height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
   position: relative;
+  font-family: "Roboto Mono", monospace;
 }
 
 canvas {
@@ -38,6 +39,7 @@ canvas {
 }
 /* Estilo para los botones */
 button {
+  font-family: "Roboto Mono", monospace;
   background-color: black;
   color: white;
 }
@@ -76,6 +78,7 @@ footer {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    justify-content: space-around;
   }
   .navegadorInicio {
     display: flex;
@@ -114,14 +117,15 @@ footer {
     padding: 0px;
   }
   .navegacionPaginas li a button {
-    margin: 5px;
-    padding: 10px;
+    margin: 2px;
+    padding: 5px;
   }
   /* Ajuste para sobre mi */
   .fotocv {
     width: 150px;
     border-radius: 80%;
     margin: 10px;
+    padding: 10px;
   }
   .mainSobreMi {
     display: flex;
@@ -129,6 +133,7 @@ footer {
     flex-direction: column;
   }
   .sobreMi {
+    padding: 10px;
     border-radius: 20px;
     width: 440px;
     display: flex;
