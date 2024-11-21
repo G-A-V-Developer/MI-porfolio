@@ -122,6 +122,7 @@ footer {
   }
   /* Ajuste para sobre mi */
   .fotocv {
+  
     width: 150px;
     border-radius: 80%;
     margin: 10px;
@@ -133,7 +134,8 @@ footer {
     flex-direction: column;
   }
   .sobreMi {
-    padding: 10px;
+    font-size: 15px;
+    padding: 0px;
     border-radius: 20px;
     width: 440px;
     display: flex;
