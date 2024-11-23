@@ -128,24 +128,25 @@ footer {
   }
   .mainSobreMi {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
   .sobreMi {
     font-size: 15px;
-    padding: 0px;
+    margin: 0px;
+    padding: 10px;
     border-radius: 20px;
-    width: 440px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
+    width: 300px;
     background-color: rgba(0, 0, 0, 0.768);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .tecnologias {
     padding: 30px;
     margin: 40px;
-    width: 300px;
+    width: 200px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.768);
     display: flex;
@@ -215,4 +216,8 @@ footer {
     padding: 10px;
     width: 300px;
   }
-}
+};
+
+@media (max-width: 14px){
+  
+};
