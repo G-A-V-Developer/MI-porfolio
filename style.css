@@ -2,7 +2,6 @@
 body {
   margin: 0; /* Eliminar márgenes */
   padding: 0; /* Eliminar rellenos */
-  overflow: hidden; /* Evitar scroll */
   background-color: black;
   color: white;
   display: flex;
@@ -164,5 +163,37 @@ footer {
   }
   .techs i {
     margin: 10px;
+  }
+  /* Ajuste para proyectos */
+  .card-img {
+    width: 200px;
+  }
+  .card {
+    margin: 10px;
+    border: solid rgb(7, 158, 158) 5px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgb(38, 34, 77);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-body {
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: rgb(7, 158, 158);
+  }
+  .card-title {
+    color: white;
+    font-size: 18px;
+  }
+  .link-a-proyecto {
+    padding: 5px;
+    background-color: rgb(38, 34, 77);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
   }
 }
