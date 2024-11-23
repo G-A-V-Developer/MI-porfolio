@@ -196,4 +196,23 @@ footer {
     text-decoration: none;
     border-radius: 10px;
   }
+
+  /* Ajuste de servicios */
+
+  /* Ajuste de contactos */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+  }
+  textarea{
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+  }
 }
