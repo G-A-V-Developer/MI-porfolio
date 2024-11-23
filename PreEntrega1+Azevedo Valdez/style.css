@@ -1,0 +1,218 @@
+/* Estilo para el fondo */
+body {
+  margin: 0; /* Eliminar márgenes */
+  padding: 0; /* Eliminar rellenos */
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ocupa el 100% del ancho */
+  height: 100vh; /* Ocupa el 100% del alto */
+  z-index: -1; /* Asegura que el canvas esté detrás de los elementos */
+}
+
+/* Estilo para el inicio */
+.navegadorInicio {
+  list-style: none;
+  padding: 5px;
+  margin: 0px;
+}
+.nav-item {
+  list-style: none;
+}
+
+.marca {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+  margin: 100px;
+}
+/* Estilo para los botones */
+button {
+  font-family: "Roboto Mono", monospace;
+  background-color: black;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+
+/* Estilo del footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.redes a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 10px;
+}
+
+/* Estilo para la barra de navegacion de las otras paginas */
+
+.navegacion a button {
+  background-color: black;
+  color: white;
+}
+
+/* Media Queries */
+
+/* Moviles */
+@media (max-width: 768px) {
+  /* Ajuste para el inicio */
+  .bodyInicio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navegadorInicio {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link button {
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+  }
+  .marca {
+    font-size: 50px;
+    margin: 0px;
+    padding: 40px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bodyPaginas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* Ajuste de la navegacion para todas las paginas menos inicio */
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .navegacionPaginas {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  .navegacionPaginas li a button {
+    margin: 2px;
+    padding: 5px;
+  }
+  /* Ajuste para sobre mi */
+  .fotocv {
+    width: 150px;
+    border-radius: 80%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .mainSobreMi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sobreMi {
+    font-size: 15px;
+    padding: 0px;
+    border-radius: 20px;
+    width: 440px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.768);
+  }
+  .tecnologias {
+    padding: 30px;
+    margin: 40px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.768);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tecnologias .techs {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 20px;
+  }
+  .techs i {
+    margin: 10px;
+  }
+  /* Ajuste para proyectos */
+  .card-img {
+    width: 200px;
+  }
+  .card {
+    margin: 10px;
+    border: solid rgb(7, 158, 158) 5px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgb(38, 34, 77);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-body {
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: rgb(7, 158, 158);
+  }
+  .card-title {
+    color: white;
+    font-size: 18px;
+  }
+  .link-a-proyecto {
+    padding: 5px;
+    background-color: rgb(38, 34, 77);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  /* Ajuste de servicios */
+
+  /* Ajuste de contactos */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+  }
+  textarea{
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+  }
+}
